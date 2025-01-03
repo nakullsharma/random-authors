@@ -13,8 +13,8 @@ function App() {
     <div style={styles.container}>
       <h1 style={styles.title}>Random Author Generator</h1>
       <button onClick={getRandomAuthor} style={styles.button}>
-        Get Random Author
-      </button>
+       Inspire Me!
+       </button>
       {author && (
         <div style={styles.card}>
           <h2 style={styles.authorName}>{author.name}</h2>
