@@ -35,7 +35,7 @@ h1 {
   line-height: 1.1;
 }
 
-button {
+.generate-button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -44,15 +44,14 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
-button:hover {
-  border-color: #646cff;
+
+.generate-button:hover {
+  transform: scale(1.15);
+  background: linear-gradient(90deg, #dd2476, #ff512f);
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+
 
 @media (prefers-color-scheme: light) {
   :root {
