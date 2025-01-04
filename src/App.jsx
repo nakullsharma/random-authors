@@ -15,6 +15,9 @@ function App() {
       <button onClick={getRandomAuthor} style={styles.button}>
        Inspire Me!
        </button>
+        <button onClick={() => setAuthor(null)} style={styles.button}>
+         Clear Quote
+         </button>
       {author && (
         <div style={styles.card}>
           <h2 style={styles.authorName}>{author.name}</h2>
@@ -26,7 +29,7 @@ function App() {
           </p>
           {author.link && (
             <a
-              href={author.link}
+              href={author.link}  
               target="_blank"
               rel="noopener noreferrer"
               style={styles.link}
